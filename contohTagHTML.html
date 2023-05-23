@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: yellow;
+        }
+    
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function validateform() {
+            let email = document.forms["myForm"]["fname"].value
+            let password = document.forms["myForm"]["fname"].value
+
+            if (email == "" || password == ""){
+                alert("Terjadi kesalahan")
+                return false;
+            }
+        }
+    </script>
+</head>
+    <!-- Judul Aplikasi -->
+    <h1>BELAJAR HTML BERSAMA <a href="https://arkademi.com/masuk">ARKADEMI</a></h1>
+    <h2>Hari ini merupakan hari ke-2</h2>
+    <h3>Hari ini merupakan hari ke-2</h3>
+
+    <b>text ini menggunakan tag bold</b><br/>
+
+    <img src="./icon-pendidikan.png" alt="Logo Pendidikan" /><br />
+
+    <mark>Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan
+    karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi
+    profesi.</mark>
+
+
+    <form name="myForm" onsubmit="return validateform()">
+        Email: <input type="text" name="fname" /><br />
+        Password: <input type="password" name="fPassword" /><br />
+        <input type="submit" value="Masuk" />
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Furhan</td>
+                <td>furhan@gmail.com</td>
+                <td>Jakarta</td>
+            </tr>
+            <tr>
+                <td>Siti</td>
+                <td>siti@gmail.com</td>
+                <td>Bogor</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

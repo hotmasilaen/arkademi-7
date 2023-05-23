@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero-new-wrapper{
+            justify-content: space-between;
+            position: relative;
+            padding-top: 4.857vw;
+            padding-bottom: 12.545vw;
+            margin: auto;
+            width: 80%;
+            z-index: 1;
+        }
+        .d-flex{
+            display: flex!important;
+        }
+        .text-hero{
+            max-width: 45.208vw;
+        }
+        .information{
+            gap: 0.786vw;
+            margin-bottom: 2.577vw;
+            align-items: center;
+        }
+        button{
+            background: linear-gradient(261.28deg,#ff9417 18.17%,#ff8017 84.69%);
+            border-radius: 0.429vw;
+            border: none;
+            outline: none;
+            min-width: 24.285vw;
+            height: 3.932vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.701vw;
+            font-family: Montserrat;
+            font-weight: 800;
+            font-size: 1.097vw;
+            line-height: 1.357vw;
+            letter-spacing: .013vw;
+            color: #fff;
+        }
+        span{
+            color: #006cbb;
+        }
+        .description{
+            font-family: Source Sans Pro;
+            font-weight: 600;
+            font-size: 1.007vw;
+            line-height: 1.458vw;
+            color: #55575a;
+            margin-bottom: 0.972vw;
+        }
+
+        @media only screen and (max-width: 600px){
+            .hero-new-wrapper{
+                padding-top: 0vw;
+                margin: 0;
+            }
+            h1{
+                font-size: 1rem;
+            }
+
+            .d-flex{
+                flex-direction: column;
+            }
+
+            .hero-new-wrapper > img {
+                margin-top: 60px;
+                width: 50%;
+            }
+
+            .description{
+                font-size: 16px;
+                line-height: 4.458vw;
+            }
+            .text-hero{
+                width: 100%;
+                max-width: 100%;
+            }
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-new-wrapper d-flex">
+        <div class="text-hero">
+            <h1>Kursus Online dari <br />
+                Lembaga Pelatihan <u>Resmi</u> untuk<br /><span>Tingkatkan Karier Profesionalmu</span></h1>
+            
+        
+            <p class="description">Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan
+            karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi
+            profesi.</p>
+
+            <div class="information d-flex">
+                <img src="./icon-pendidikan.png" alt="Logo Pendidikan" width="25" height="25" />
+                <p>Arkademi adalah <b>lembaga kursus dan pendidikan resmi berlisensi</b> dari Kementrian Pendidikan, Kebudayaan, Riset, dan
+                Teknologi RI</p>
+            </div>
+        
+            <button>Lihat yang Sesuai untuk Kariermu</button>
+        </div>
+    
+        <img src="./image-new-hero-comp.c0ee2441.png" />
+    </div>
+</body>
+</html>

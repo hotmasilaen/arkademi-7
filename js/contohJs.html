@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="root"></p>
+    <script>
+        let name = 'Farhan';
+        name = "Siti";
+        let umur = 21
+        umur = 22
+        // console.log('Nama: ' + name, ', Umur: ' + umur);
+        // alert('Umur: ' + umur)
+        document.getElementById('root').innerHTML = 'Nama: ' + name
+
+        const nama = ' ';
+        const kodepos = undefined
+        // console.log(typeof kodepos);
+
+        const val1 = "Farhan"; //number
+        const val2 = "FarhaN"; //number
+
+        const hasil = val1 % val2 ;
+        console.log(val1 === val2);
+
+        const val3 = 'We can count how long this character';
+        const val4 = 'We can count how long \n this character';
+        console.log(val4.length);
+
+        const hari = 'Selasa';
+
+        if (hari !== 'Senin') {
+            console.log('Hari ini belajar JavaScript');
+        }else if(hari === 'Selasa'){
+            console.log('Kita akan belajar tentang version control');
+        } else {
+            console.log('Kita sudah melewati 3 materi sebelumnya');
+        }
+
+
+        switch (hari){
+            case 'Senin':
+                console.log('harus upacara');
+                break;
+            case 'Jumat':
+                console.log('waktunya senam');
+                break;
+            default:
+                console.log('hari belajar biasa');
+        }
+
+        const fruits = ['Appel', 'Banana', 'Manggo'];
+
+        for(var i = 0; i < fruits.length; i++){
+            console.log("Fruits: " + fruits[i]);
+        }
+
+        for(var i in fruits){
+            console.log("Fruits: " + fruits[i]);
+        }
+    </script>
+</body>
+</html>

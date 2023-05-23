@@ -1,0 +1,132 @@
+.p1 {
+    margin-bottom: 2rem;
+}
+
+p {
+    background-color: brown;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+div {
+    color: blue;
+}
+
+.text-p {
+    color: rgb(243, 88, 114);
+}
+
+#title {
+    color: green;
+}
+
+.container {
+    width: 100%;
+    height: 523px;
+    background-image: url('../image-new-hero-comp.c0ee2441.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+img {
+    border-width: 9px;
+    border-color: #0a77bc;
+    border-style: double;
+    filter: contrast(0.5);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    /* transition: width 5s, height 2s, transform 2s;
+            transition-delay: 2s; */
+    animation: kotak 2s ease infinite;
+}
+
+/* .box:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        } */
+
+@keyframes kotak {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 500px;
+    }
+}
+
+.wave {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #00bfff;
+}
+
+.wave:before,
+.wave:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    transform-origin: bottom;
+    animation: wave 2s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.wave:before {
+    z-index: 1;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.wave:after {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@keyframes wave {
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+header{
+    background-color: beige;
+    background-image: url('../image-new-hero-comp.c0ee2441.png');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    height: 100vh;
+    display: flex;
+}
+
+h1{
+    margin: auto;
+    color: black;
+    text-align: center;
+    font-size: 4vh;
+}
